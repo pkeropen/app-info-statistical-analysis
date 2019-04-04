@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaCompilerConfiguration">
+    <profile name="Maven 1" modules="app_logs_common,app_logs_flume,app_logs_client,app_logs_hive,app_logs_spark,app_logs_collect_webservice" />
+  </component>
+</project>

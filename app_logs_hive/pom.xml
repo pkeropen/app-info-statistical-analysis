@@ -12,5 +12,13 @@
 
     <artifactId>app_logs_hive</artifactId>
 
+    <dependencies>
 
+        <dependency>
+            <groupId>org.apache.hive</groupId>
+            <artifactId>hive-exec</artifactId>
+            <version>${hive.version}</version>
+        </dependency>
+
+    </dependencies>
 </project>
