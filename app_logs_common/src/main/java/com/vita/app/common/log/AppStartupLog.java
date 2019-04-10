@@ -1,5 +1,7 @@
 package com.vita.app.common.log;
 
+import com.vita.app.common.Constants;
+
 /**
  * App 启动日志
  */
@@ -14,6 +16,7 @@ public class AppStartupLog extends AppBaseLog {
 
     private String brand;            //品牌
     private String screenSize;       //分辨率
+
 
     public String getCountry() {
         return country;

@@ -1,7 +1,9 @@
 package com.vita.app.common.log;
 
+import com.vita.app.common.Constants;
+
 /**
- *  APP页面记录
+ * APP页面记录
  */
 public class AppPageLog extends AppBaseLog {
 
@@ -9,6 +11,8 @@ public class AppPageLog extends AppBaseLog {
     private int visitIndex = 0;                //访问顺序号，0为第一个页面
     private String nextPage;       //下一个访问页面，如为空则表示为退出应用的页面
     private Long stayDurationSecs = (long) 0;      //当前页面停留时长
+
+
 
     public String getPageId() {
         return pageId;

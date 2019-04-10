@@ -11,13 +11,13 @@
             <!--输出日志的格式-->
             <PatternLayout pattern="[%d{HH:mm:ss:SSS}] [%p] - %l - %m%n"/>
         </console>
-        <!--输出到flume-->
+       <!-- &lt;!&ndash;输出到flume&ndash;&gt;
         <Flume name="FlumeInfo" compress="false" type="avro" ignoreExceptions="false">
             <Agent host="127.0.0.1" port="5555"/>
-            <!--输出方式为json-->
-            <!--<JSONLayout/>-->
+            &lt;!&ndash;输出方式为json&ndash;&gt;
+            &lt;!&ndash;<JSONLayout/>&ndash;&gt;
             <PatternLayout pattern="[%d{HH:mm:ss:SSS}] [%p] - %l - %m%n"/>
-        </Flume>
+        </Flume>-->
     </appenders>
     <!--然后定义logger，只有定义了logger并引入的appender，appender才会生效-->
     <loggers>

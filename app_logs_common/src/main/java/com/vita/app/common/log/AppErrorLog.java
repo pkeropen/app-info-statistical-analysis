@@ -1,5 +1,7 @@
 package com.vita.app.common.log;
 
+import com.vita.app.common.Constants;
+
 /**
  * APP发送错误日志
  */
@@ -11,6 +13,7 @@ public class AppErrorLog extends AppBaseLog {
     public String getErrorBrief() {
         return errorBrief;
     }
+
 
     public void setErrorBrief(String errorBrief) {
         this.errorBrief = errorBrief;

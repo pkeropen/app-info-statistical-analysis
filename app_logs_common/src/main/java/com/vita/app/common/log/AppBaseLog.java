@@ -7,6 +7,7 @@ import java.io.Serializable;
  */
 public class AppBaseLog implements Serializable {
 
+    private String logType;          //日志类型
     private Long createdAdMs;     //日志创建时间
     private String appId;         //应用唯一标识
     private String tenantId;      //企业用户唯一标识
@@ -17,11 +18,23 @@ public class AppBaseLog implements Serializable {
     private String osType;        //操作系统
     private String deviceStyle;   //机型
 
+    public String getLogType() {
+        return logType;
+    }
+
+    public void setLogType(String logType) {
+        this.logType = logType;
+    }
+
+    public void setCreatedAdMs(Long createdAdMs) {
+        this.createdAdMs = createdAdMs;
+    }
+
     public Long getCreatedAdMs() {
         return createdAdMs;
     }
 
-    public void setCreatedAdMs(Long createdAdMs) {
+    public void setCreatedAtMs(Long createdAdMs) {
         this.createdAdMs = createdAdMs;
     }
 

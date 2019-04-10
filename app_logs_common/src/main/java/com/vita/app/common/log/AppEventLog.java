@@ -1,5 +1,7 @@
 package com.vita.app.common.log;
 
+import com.vita.app.common.Constants;
+
 import java.util.Map;
 
 public class AppEventLog extends AppBaseLog {

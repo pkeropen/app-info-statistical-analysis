@@ -6,7 +6,7 @@ import com.vita.app.common.log.*;
  * AppLog实体类
  * 含有各种日志的集合。
  */
-public class AppLogEntity extends AppBaseLog {
+public class AppLogEntity {
 
     private AppStartupLog[] appStartupLogs;      //启动相关信息的数组
     private AppPageLog[] appPageLogs;            //页面跳转相关信息的数组

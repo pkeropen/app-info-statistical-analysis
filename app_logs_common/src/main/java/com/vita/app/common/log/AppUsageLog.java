@@ -7,6 +7,15 @@ public class AppUsageLog extends AppBaseLog {
 
     private Long singleUploadTraffic;     //单次使用过程中的上传流量
     private Long singleDownloadTraffic;       //单次使用过程中的下载流量
+    private Long singleUseDurationSecs;    //指一次启动内应用在前台的持续时长
+
+    public Long getSingleUseDurationSecs() {
+        return singleUseDurationSecs;
+    }
+
+    public void setSingleUseDurationSecs(Long singleUseDurationSecs) {
+        this.singleUseDurationSecs = singleUseDurationSecs;
+    }
 
     public Long getSingleUploadTraffic() {
         return singleUploadTraffic;

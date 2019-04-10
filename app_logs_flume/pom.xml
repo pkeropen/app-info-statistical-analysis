@@ -18,6 +18,22 @@
             <artifactId>flume-ng-core</artifactId>
             <version>${flume.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.flume</groupId>
+            <artifactId>flume-ng-configuration</artifactId>
+            <version>${flume.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka_${scala.version}</artifactId>
+            <version>0.10.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.vita.bigdata.app.statistical</groupId>
+            <artifactId>app_logs</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
     </dependencies>
 
 </project>
