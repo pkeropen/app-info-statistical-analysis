@@ -1,0 +1,65 @@
+CREATE TABLE `webCount` (`titleName` varchar(255) CHARACTER SET utf8 DEFAULT NULL,`count` int(11) DEFAULT NULL)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+sh /bin/spark2-submit \
+  --class com.vita.spark.StructuredStreamingKafka \
+  --master yarn \
+  --deploy-mode cluster \
+  --executor-memory 1G \
+  --executor-cores 2 \
+  --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.2.0 \
+  /opt/jars/spark-weblogs.jar \
+  10
+
+//debug
+sh /bin/spark2-submit \
+  --class com.vita.spark.StructuredStreamingKafka \
+  --master yarn \
+  --deploy-mode cluster \
+  --executor-memory 1G \
+  --executor-cores 1 \
+  --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.2.0 \
+  --driver-java-options "-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005" \
+  /opt/jars/spark-weblogs.jar \
+  10
+
+//spark-shell
+sh /bin/spark-shell \
+--master yarn \
+--executor-memory 1G \
+--num-executors 2
+
+
+export SPARK_DIST_CLASSPATH=$(hadoop classpath)
+
+export SPARK_SUBMIT_OPTS="-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=5005"
+
+val jdbcDF = spark.read.format("jdbc").option("url", "jdbc:mysql://hadoop01:3306/test").option("dbtable", "webCount").option("user", "root").option("password", "root").load()
+
+
+sh /bin/kafka-topics.sh --create --zookeeper hadoop01:2181 --topic webCount --partitions 1 --replication-factor 1
+
+//producer
+sh /bin/kafka-console-producer --broker-list hadoop01:9092 --topic webCount
+
+//consumer
+sh /bin/kafka-console-consumer --zookeeper hadoop01:2181 --topic webCount --from-beginning
+
+//topic
+sh /bin/kafka-topics  --delete --zookeeper hadoop01  --topic webCount
+
+//topic list
+sh /bin/kafka-topics --zookeeper hadoop01:2181 --list
+
+CREATE EXTERNAL TABLE weblogs(
+id string,
+datetime string,
+userid string,
+searchname string,
+retorder string,
+cliorder string,
+cliurl string
+)
+STORED BY 'org.apache.hadoop.hive.hbase.HBaseStorageHandler'
+WITH SERDEPROPERTIES("hbase.columns.mapping"=
+":key,info:datetime,info:userid,info:searchname,info:retorder,info:cliorder,info:cliurl")
+TBLPROPERTIES("hbase.table.name"="weblogs");

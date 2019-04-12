@@ -7,16 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a388eaa-34b7-491a-8058-1d43365c9991" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_logs_hive/src/main/resources/script/HDFS2Hive.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_logs_hive/src/main/resources/script/HDFS2Hive.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_logs_client/app_logs_client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app_logs_client/app_logs_client.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_logs_collect_webservice/app_logs_collect_webservice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app_logs_collect_webservice/app_logs_collect_webservice.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_logs_common/app_logs_common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app_logs_common/app_logs_common.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_logs_common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app_logs_common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_logs_flume/app_logs_flume.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app_logs_flume/app_logs_flume.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_logs_client/src/main/java/com/vita/client/GenerateData.java" beforeDir="false" afterPath="$PROJECT_DIR$/app_logs_client/src/main/java/com/vita/client/GenerateData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_logs_flume/src/main/java/com/vita/flume/interceptor/AppCollectionInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/app_logs_flume/src/main/java/com/vita/flume/interceptor/AppCollectionInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_logs_flume/src/main/resources/conf/flume-collect-log-conf.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_logs_flume/src/main/resources/conf/flume-kfk-hbase-conf.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app_logs_flume/src/main/resources/conf/flume-kfk-hbase-conf.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app_logs_hive/app_logs_hive.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app_logs_hive/app_logs_hive.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_logs_spark/app_logs_spark.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app_logs_spark/app_logs_spark.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/app_logs_hive/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -48,33 +46,38 @@
     <session id="895206426">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.18" value="2" />
-          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.18" value="4" />
+          <entry key="project.open.time.19" value="2" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="Bash" value="7" />
           <entry key="Git file" value="4" />
-          <entry key="JAVA" value="6067" />
-          <entry key="Properties" value="622" />
+          <entry key="JAVA" value="6139" />
+          <entry key="Properties" value="692" />
+          <entry key="Python" value="459" />
           <entry key="XML" value="330" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="Bash" value="1" />
           <entry key="CLASS" value="2" />
           <entry key="Eclipse" value="1" />
           <entry key="Git file" value="1" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="66" />
-          <entry key="Properties" value="11" />
+          <entry key="JAVA" value="70" />
+          <entry key="Properties" value="12" />
+          <entry key="Python" value="2" />
           <entry key="Scala" value="1" />
           <entry key="XML" value="18" />
         </counts>
@@ -84,81 +87,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_logs_collect_webservice/src/main/java/com/vita/collection/app/api/collection/controller/ApiController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-255">
-              <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_logs_common/src/main/java/com/vita/app/common/entity/AppLogEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-              <folding>
-                <element signature="e#515#516#0" expanded="true" />
-                <element signature="e#552#553#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_logs_common/src/main/java/com/vita/app/common/log/AppUsageLog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-              <folding>
-                <element signature="e#325#326#0" expanded="true" />
-                <element signature="e#369#370#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_logs_common/src/main/java/com/vita/app/common/log/AppStartupLog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <element signature="e#471#472#0" expanded="true" />
-                <element signature="e#501#502#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_logs_common/src/main/java/com/vita/app/common/log/AppEventLog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_logs_common/src/main/java/com/vita/app/common/log/AppPageLog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app_logs_flume/src/main/java/com/vita/flume/sink/kafka/ReadAppKafkaSink.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
+            <state relative-caret-position="875">
               <caret line="45" column="20" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -179,18 +110,83 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app_logs_flume/src/main/resources/conf/flume-kfk-hbase-conf.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+            <state relative-caret-position="462">
+              <caret line="47" column="33" lean-forward="true" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_logs_collect_webservice/src/main/java/com/vita/collection/app/api/AppLogsWebApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_logs_client/src/main/java/com/vita/client/GenerateData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4400">
+              <caret line="176" column="22" lean-forward="true" selection-start-line="176" selection-start-column="22" selection-end-line="176" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_logs_flume/src/main/java/com/vita/flume/interceptor/AppCollectionInterceptor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="54" column="82" selection-start-line="54" selection-start-column="82" selection-end-line="54" selection-end-column="82" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2170#2171#0" expanded="true" />
+                <element signature="e#2266#2267#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_logs_collect_webservice/src/main/java/com/vita/collection/app/api/flume/FlumeRpcClientFacade.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="174">
+              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_logs_common/pom.xml">
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3475">
+              <caret line="139" column="41" selection-start-line="139" selection-start-column="41" selection-end-line="139" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_logs_hive/src/main/resources/script/HDFS2Hive.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app_logs_common/pom.xml">
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+        <entry file="file://$PROJECT_DIR$/app_logs_hive/src/main/resources/script/HDFS2Hive.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="135" column="21" selection-start-line="135" selection-start-column="21" selection-end-line="135" selection-end-column="21" />
+            <state relative-caret-position="250">
+              <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+              <folding>
+                <element signature="e#43#54#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -203,6 +199,7 @@
         <option value="Interface" />
         <option value="Singleton" />
         <option value="Class" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -248,7 +245,6 @@
         <option value="$PROJECT_DIR$/app_logs_flume/src/main/resources/conf/scriptFile.scala" />
         <option value="$PROJECT_DIR$/app_logs_flume/src/main/resources/conf/flume-read-log-conf.properties" />
         <option value="$PROJECT_DIR$/app_logs_flume/src/main/resources/conf/flume-collect-log-conf.properties" />
-        <option value="$PROJECT_DIR$/app_logs_flume/src/main/java/com/vita/flume/interceptor/AppCollectionInterceptor.java" />
         <option value="$PROJECT_DIR$/app_logs_common/src/main/java/com/vita/app/common/AppBaseLog.java" />
         <option value="$PROJECT_DIR$/app_logs_common/src/main/java/com/vita/app/common/log/GeoInfoLog.java" />
         <option value="$PROJECT_DIR$/app_logs_flume/src/main/java/com/vita/flume/sink/ReadAppInfoSource.java" />
@@ -278,7 +274,6 @@
         <option value="$PROJECT_DIR$/app_logs_client/src/main/java/com/vita/client/UploadUtil.java" />
         <option value="$PROJECT_DIR$/app_logs_client/src/main/java/com/vita/client/UploadUtils.java" />
         <option value="$PROJECT_DIR$/app_logs_flume/src/main/java/com/vita/flume/sink/kafka/ReadAppKafkaSink.java" />
-        <option value="$PROJECT_DIR$/app_logs_client/src/main/java/com/vita/client/GenerateData.java" />
         <option value="$PROJECT_DIR$/app_logs_common/src/main/java/com/vita/app/common/log/AppBaseLog.java" />
         <option value="$PROJECT_DIR$/app_logs_common/src/main/java/com/vita/app/common/log/AppErrorLog.java" />
         <option value="$PROJECT_DIR$/app_logs_common/src/main/java/com/vita/app/common/log/AppEventLog.java" />
@@ -286,8 +281,12 @@
         <option value="$PROJECT_DIR$/app_logs_common/src/main/java/com/vita/app/common/log/AppStartupLog.java" />
         <option value="$PROJECT_DIR$/app_logs_common/src/main/java/com/vita/app/common/log/AppUsageLog.java" />
         <option value="$PROJECT_DIR$/app_logs_common/src/main/java/com/vita/app/common/entity/AppLogEntity.java" />
-        <option value="$PROJECT_DIR$/app_logs_flume/src/main/resources/conf/flume-kfk-hbase-conf.properties" />
         <option value="$PROJECT_DIR$/app_logs_common/pom.xml" />
+        <option value="$PROJECT_DIR$/app_logs_hive/src/main/resources/shell/HDFS2Hive.sh" />
+        <option value="$PROJECT_DIR$/app_logs_client/src/main/java/com/vita/client/GenerateData.java" />
+        <option value="$PROJECT_DIR$/app_logs_flume/src/main/resources/conf/flume-kfk-hbase-conf.properties" />
+        <option value="$PROJECT_DIR$/app_logs_flume/src/main/java/com/vita/flume/interceptor/AppCollectionInterceptor.java" />
+        <option value="$PROJECT_DIR$/app_logs_hive/src/main/resources/script/HDFS2Hive.py" />
       </list>
     </option>
   </component>
@@ -304,11 +303,28 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="494" />
     <option name="y" value="1" />
     <option name="width" value="1432" />
     <option name="height" value="1057" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Python</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PyPep8Inspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -318,23 +334,135 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="app-info-statistical-analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="app_logs_common" type="462c0819:PsiDirectoryNode" />
+              <item name="app_logs_client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app-info-statistical-analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app_logs_client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app-info-statistical-analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app_logs_client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app-info-statistical-analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app_logs_client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app-info-statistical-analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app_logs_client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app-info-statistical-analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app_logs_collect_webservice" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app-info-statistical-analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app_logs_collect_webservice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app-info-statistical-analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app_logs_collect_webservice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app-info-statistical-analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app_logs_collect_webservice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app-info-statistical-analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app_logs_collect_webservice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="app-info-statistical-analysis" type="b2602c69:ProjectViewProjectNode" />
               <item name="app_logs_flume" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="app-info-statistical-analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app_logs_flume" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app-info-statistical-analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app_logs_flume" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app-info-statistical-analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app_logs_flume" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app-info-statistical-analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app_logs_flume" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="flume" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app-info-statistical-analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app_logs_flume" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="flume" type="462c0819:PsiDirectoryNode" />
+              <item name="interceptor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app-info-statistical-analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app_logs_flume" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app-info-statistical-analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app_logs_flume" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="conf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app-info-statistical-analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app_logs_flume" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -342,7 +470,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.documentation.PythonDocumentationConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -370,7 +498,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.GenerateData">
+  <component name="RunManager" selected="Python.HDFS2Hive">
     <configuration name="AppLogsWebApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.vita.collection.app.api.AppLogsWebApplication" />
       <module name="app_logs_collect_webservice" />
@@ -397,12 +525,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HDFS2Hive.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
+      <module name="app_logs_hive" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="PROJECT_INTERPRETER" value="false" />
+      <option name="WORKING_DIRECTORY" value="D:\project\spark\app-info-statistical-analysis\app_logs_hive\src\main\resources\script" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="D:\project\spark\app-info-statistical-analysis\app_logs_hive\src\main\resources\script\HDFS2Hive.sh" />
+      <option name="PARAMETERS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="HDFS2Hive" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="app_logs_hive" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app_logs_hive/src/main/resources/script" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app_logs_hive/src/main/resources/script/HDFS2Hive.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.AppLogsWebApplication" />
       <item itemvalue="Application.GenerateData" />
+      <item itemvalue="Python.HDFS2Hive" />
+      <item itemvalue="Bash.HDFS2Hive.sh" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.HDFS2Hive" />
+        <item itemvalue="Bash.HDFS2Hive.sh" />
         <item itemvalue="Application.AppLogsWebApplication" />
         <item itemvalue="Application.GenerateData" />
       </list>
@@ -423,15 +587,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1684435" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16950959" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection Results" weight="0.32975295" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.20622987" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32975295" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.39849624" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.26100966" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -440,7 +604,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.42427498" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32867885" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.25993556" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -513,9 +677,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -558,16 +719,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-          <folding>
-            <element signature="e#199#200#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_logs_flume/src/main/resources/conf/flume-collect-log-conf.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="23" selection-start-line="23" selection-end-line="24" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -630,36 +781,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="32" column="22" lean-forward="true" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_logs_collect_webservice/src/main/java/com/vita/collection/app/api/flume/FlumeRpcClientFacade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_logs_flume/src/main/java/com/vita/flume/interceptor/AppCollectionInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_logs_collect_webservice/src/main/java/com/vita/collection/app/api/AppLogsWebApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -667,10 +788,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="293">
           <caret line="83" column="26" selection-start-line="83" selection-start-column="26" selection-end-line="83" selection-end-column="26" />
-          <folding>
-            <element signature="e#2918#2919#0" expanded="true" />
-            <element signature="e#2963#2964#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -681,28 +798,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_logs_client/src/main/java/com/vita/client/GenerateData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="122" column="41" selection-start-line="122" selection-start-column="41" selection-end-line="122" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_logs_common/src/main/java/com/vita/app/common/log/AppBaseLog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
           <caret line="12" column="43" lean-forward="true" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
-          <folding>
-            <element signature="e#589#590#0" expanded="true" />
-            <element signature="e#619#620#0" expanded="true" />
-            <element signature="e#665#666#0" expanded="true" />
-            <element signature="e#703#704#0" expanded="true" />
-            <element signature="e#748#749#0" expanded="true" />
-            <element signature="e#794#795#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -710,41 +809,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#229#230#0" expanded="true" />
-            <element signature="e#262#263#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_logs_common/src/main/java/com/vita/app/common/log/AppEventLog.java">
+    <entry file="file://$PROJECT_DIR$/app_logs_collect_webservice/src/main/java/com/vita/collection/app/api/collection/controller/ApiController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="425">
+          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_logs_common/src/main/java/com/vita/app/common/log/AppPageLog.java">
+    <entry file="file://$PROJECT_DIR$/app_logs_common/src/main/java/com/vita/app/common/entity/AppLogEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="200">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_logs_common/src/main/java/com/vita/app/common/log/AppStartupLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#471#472#0" expanded="true" />
-            <element signature="e#501#502#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app_logs_flume/src/main/resources/conf/flume-collect-log-conf.properties" />
     <entry file="file://$PROJECT_DIR$/app_logs_common/src/main/java/com/vita/app/common/log/AppUsageLog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -756,30 +838,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_logs_common/src/main/java/com/vita/app/common/entity/AppLogEntity.java">
+    <entry file="file://$PROJECT_DIR$/app_logs_common/src/main/java/com/vita/app/common/log/AppStartupLog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-          <folding>
-            <element signature="e#515#516#0" expanded="true" />
-            <element signature="e#552#553#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="450">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_logs_collect_webservice/src/main/java/com/vita/collection/app/api/collection/controller/ApiController.java">
+    <entry file="file://$PROJECT_DIR$/app_logs_common/src/main/java/com/vita/app/common/log/AppEventLog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255">
-          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+        <state relative-caret-position="250">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app_logs_common/src/main/java/com/vita/app/common/log/AppPageLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app_logs_flume/src/main/java/com/vita/flume/sink/kafka/ReadAppKafkaSink.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
+        <state relative-caret-position="875">
           <caret line="45" column="20" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -794,18 +879,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_logs_flume/src/main/resources/conf/flume-kfk-hbase-conf.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_logs_common/pom.xml">
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="135" column="21" selection-start-line="135" selection-start-column="21" selection-end-line="135" selection-end-column="21" />
+        <state relative-caret-position="3475">
+          <caret line="139" column="41" selection-start-line="139" selection-start-column="41" selection-end-line="139" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_logs_client/src/main/java/com/vita/client/GenerateData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4400">
+          <caret line="176" column="22" lean-forward="true" selection-start-line="176" selection-start-column="22" selection-end-line="176" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_logs_collect_webservice/src/main/java/com/vita/collection/app/api/AppLogsWebApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_logs_flume/src/main/java/com/vita/flume/interceptor/AppCollectionInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="54" column="82" selection-start-line="54" selection-start-column="82" selection-end-line="54" selection-end-column="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2170#2171#0" expanded="true" />
+            <element signature="e#2266#2267#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_logs_collect_webservice/src/main/java/com/vita/collection/app/api/flume/FlumeRpcClientFacade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_logs_flume/src/main/resources/conf/flume-kfk-hbase-conf.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="47" column="33" lean-forward="true" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_logs_hive/src/main/resources/script/HDFS2Hive.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_logs_hive/src/main/resources/script/HDFS2Hive.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+          <folding>
+            <element signature="e#43#54#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -828,7 +966,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited>Python</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -840,6 +978,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Python 3.7 (app-info-statistical-analysis) interpreter library</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -863,7 +1002,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>app_logs_client</last-edited>
+          <last-edited>app_logs_hive</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -876,7 +1015,7 @@
       </state>
       <state key="ProjectJDKs.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>Python 3.7 (app-info-statistical-analysis)</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

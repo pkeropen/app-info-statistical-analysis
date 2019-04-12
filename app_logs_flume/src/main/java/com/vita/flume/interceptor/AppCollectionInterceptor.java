@@ -52,6 +52,7 @@ public class AppCollectionInterceptor implements Interceptor {
 
         //将日志类型存储到flume中
         headers.put("logType", logType);
+        headers.put(Constants.TIMESTAMP, String.valueOf(System.currentTimeMillis()));
 
         return event;
     }

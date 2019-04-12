@@ -1,0 +1,34 @@
+kafka-console-producer.bat --broker-list localhost:9092 --topic test
+
+kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic test
+
+kafka-server-start.bat D:\kafka\kafka_2.11-1.1.1\config\server.properties
+
+
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test
+
+
+java -cp KafkaOffsetMonitor-assembly-0.2.1.jar com.quantifind.kafka.offsetapp.OffsetGetterWeb --offsetStorage kafka --zk localhost:2181 --port 8089 --refresh 10.seconds --retain 1.days
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+zookeeper:
+cd D:\zookeeper-3.4.9\bin
+
+flume:
+cd D:\sofeware\flume\apache-flume-1.7.0
+flume-ng  agent -conf conf  -conf-file conf/flume-kfk-hbase-conf.properties  -name a1  -property "flume.root.logger=INFO,console"
+
+kafka:
+cd D:\kafka\kafka_2.11-1.1.1\bin\windows
+
+kafka-server-start.bat D:\kafka\kafka_2.11-1.1.1\config\server.properties
+
+kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic test
+
+hive:
+//first exec
+hive --service metastore
+
+hive

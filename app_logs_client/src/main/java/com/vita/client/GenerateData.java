@@ -1,7 +1,7 @@
 package com.vita.client;
 
 
-import com.alibaba.fastjson.JSONObject;
+import com.google.gson.Gson;
 import com.vita.app.common.Constants;
 import com.vita.app.common.entity.AppLogEntity;
 import com.vita.app.common.log.*;
@@ -303,7 +303,8 @@ public class GenerateData {
 
             try {
                 // 将对象转换成json string
-                String json = JSONObject.toJSONString(logEntity);
+                Gson gson = new Gson();
+                String json =  gson.toJson(logEntity);
 
                 // 网络请求发送json数据
                 UploadUtils.upload(json);
