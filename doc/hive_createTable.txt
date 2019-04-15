@@ -1,0 +1,92 @@
+CREATE external TABLE ext_startup_logs
+(createdAtMs bigint,
+appId string,
+tenantId string,
+deviceId string,
+appVersion string,
+appChannel string,
+appPlatform string,
+osType string,
+deviceStyle string,
+country string,
+province string,
+ipAddress string,
+network string,
+carrier string,
+brand string,
+screenSize string)
+PARTITIONED BY (ym string, day string,hm string) 
+ROW FORMAT SERDE 'org.openx.data.jsonserde.JsonSerDe' STORED AS TEXTFILE;
+
+
+
+CREATE external TABLE ext_error_logs
+(createdAtMs bigint,
+appId string,
+tenantId string,
+deviceId string,
+appVersion string,
+appChannel string,
+appPlatform string,
+osType string,
+deviceStyle string,
+errorBrief string,
+errorDetail string)
+PARTITIONED BY (ym string, day string,hm string) 
+ROW FORMAT SERDE 'org.openx.data.jsonserde.JsonSerDe' STORED AS TEXTFILE;
+
+
+
+CREATE external TABLE ext_event_logs
+(createdAtMs bigint,
+appId string,
+tenantId string,
+deviceId string,
+appVersion string,
+appChannel string,
+appPlatform string,
+osType string,
+deviceStyle string,
+eventId string,
+eventDurationSecs bigint,
+paramKeyValueMap Map<string,string>)
+PARTITIONED BY (ym string, day string,hm string) 
+ROW FORMAT SERDE 'org.openx.data.jsonserde.JsonSerDe' STORED AS TEXTFILE;
+
+
+
+CREATE external TABLE ext_page_logs
+(createdAtMs bigint,
+appId string,
+tenantId string,
+deviceId string,
+appVersion string,
+appChannel string,
+appPlatform string,
+osType string,
+deviceStyle string,
+pageViewCntInSession int,
+pageId string,
+visitIndex int,
+nextPage string,
+stayDurationSecs bigint)
+PARTITIONED BY (ym string, day string,hm string) 
+ROW FORMAT SERDE 'org.openx.data.jsonserde.JsonSerDe' STORED AS TEXTFILE;
+
+
+
+CREATE external TABLE ext_usage_logs
+(createdAtMs bigint,
+appId string,
+tenantId string,
+deviceId string,
+appVersion string,
+appChannel string,
+appPlatform string,
+osType string,
+deviceStyle string,
+singleUseDurationSecs bigint,
+singleUploadTraffic bigint,
+singleDownloadTraffic bigint)
+PARTITIONED BY (ym string, day string,hm string) 
+ROW FORMAT SERDE 'org.openx.data.jsonserde.JsonSerDe' STORED AS TEXTFILE;
